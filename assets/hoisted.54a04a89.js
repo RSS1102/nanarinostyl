@@ -1,0 +1,1 @@
+import"./hoisted.f15f1a47.js";const e=document.getElementById("colors-kanban");e.onclick=function(n){const t=n.target;t.tagName==="BUTTON"&&t.title&&(window.copy(`rgb(var(${t.title}))`),window.dispatchEvent(new CustomEvent(`${window.name}-message`,{detail:"复制成功"})))};
