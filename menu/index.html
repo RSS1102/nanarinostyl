@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="astro-KQ56SC45">
+    <head>
+        <meta charset="UTF-8">
+        <title>全局</title>
+        <meta name="generator" content="Astro v2.10.12">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+        <script fetchpriority="high">(function(){const prefix = "na";
+window.name = prefix})();</script>
+        <script fetchpriority="high">(function(){const prefix = "na";
+
+            Object.defineProperty(window, "theme", {
+                get: () => {
+                    let theme = localStorage.getItem("theme") || "auto";
+                    if (theme === "auto") {
+                        theme = ["dark", "light"][
+                            +!window.matchMedia?.("(prefers-color-scheme: dark)")?.matches
+                        ];
+                    }
+                    return theme
+                }
+            });
+            document.documentElement.dataset["theme"] = window.theme;
+        })();</script>
+        
+        
+        
+    <link rel="stylesheet" href="/_astro/index.664246f1.css" />
+<link rel="stylesheet" href="/_astro/badge.07995974.css" />
+<link rel="stylesheet" href="/_astro/badge.ed0a3819.css" /><script type="module" src="/_astro/hoisted.2cae43c3.js"></script></head>
+    <body class="astro-KQ56SC45">
+        <div class="na-message-queue" id="message-queue"></div>
+        
+    <header class="na-layout-header astro-HPNW4VWY">
+    <a href="/" class="logo astro-HPNW4VWY">
+        <img src="/favicon.svg" alt="logo" class="logo astro-HPNW4VWY">
+    </a>
+    <span class="na-switch astro-HPNW4VWY">
+    <input type="checkbox" id="header-theme-switch" name="theme">
+    <label class="na-switch-mover" for="header-theme-switch" title="theme">
+        <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="sun" class="astro-HPNW4VWY" astro-icon="general/outline/sun"><circle cx="24" cy="24" r="7"/><path d="M23 7h2v2h-2zM23 39h2v2h-2zM41 23v2h-2v-2zM9 23v2H7v-2zM36.73 35.313l-1.415 1.415-1.414-1.415 1.414-1.414zM14.099 12.686l-1.414 1.415-1.414-1.415 1.414-1.414zM12.687 36.728l-1.414-1.415 1.414-1.414 1.414 1.414zM35.314 14.1 33.9 12.686l1.414-1.414 1.415 1.414z"/><path fill="currentColor" stroke="none" d="M23 7h2v2h-2zM23 39h2v2h-2zM41 23v2h-2v-2zM9 23v2H7v-2zM36.73 35.313l-1.415 1.415-1.414-1.415 1.414-1.414zM14.099 12.686l-1.414 1.415-1.414-1.415 1.414-1.414zM12.687 36.728l-1.414-1.415 1.414-1.414 1.414 1.414zM35.314 14.1 33.9 12.686l1.414-1.414 1.415 1.414z"/></svg>
+        <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="moon" class="astro-HPNW4VWY" astro-icon="general/outline/moon"><path d="M39.979 29.241c.11-.344-.23-.654-.574-.544-1.53.487-3.162.75-4.855.75-8.834 0-15.997-7.163-15.997-15.997 0-1.693.263-3.324.75-4.855.11-.344-.2-.684-.544-.574C11.939 10.19 7 16.576 7 24.114 7 33.44 14.56 41 23.886 41c7.538 0 13.923-4.94 16.093-11.759Z"/></svg>
+    </label>
+</span>
+</header>
+    <section class="na-layout astro-YU3CDCUI" data-has-sider>
+        <aside class="na-layout-sider astro-YU3CDCUI">
+            <ul class="na-menu">
+    <li class="na-menu-item" style="order:1">
+                    <a class="na-menu-item-link" href="/menu/badge">
+                        badge
+                    </a>
+                </li><li class="na-menu-item" style="order:1">
+                    <a class="na-menu-item-link" href="/menu/button">
+                        button
+                    </a>
+                </li><li class="na-menu-submenu" style="order:1" data-folded>
+                        <div class="na-menu-submenu-title" onclick="this.parentElement.toggleAttribute('data-folded')">
+                            <span>form</span>
+                            <i class="na-menu-submenu-title-arrow"></i>
+                        </div>
+                        <ul class="na-menu">
+    <li class="na-menu-item" style="order:1">
+                    <a class="na-menu-item-link" href="/menu/form/switch">
+                        switch
+                    </a>
+                </li>
+</ul>
+                    </li><li class="na-menu-item" data-selected style="order:0">
+                    <a class="na-menu-item-link" href="/menu/">
+                        readme
+                    </a>
+                </li><li class="na-menu-item" style="order:1">
+                    <a class="na-menu-item-link" href="/menu/link">
+                        link
+                    </a>
+                </li><li class="na-menu-item" style="order:1">
+                    <a class="na-menu-item-link" href="/menu/tag">
+                        tag
+                    </a>
+                </li><li class="na-menu-submenu" style="order:1" data-folded>
+                        <div class="na-menu-submenu-title" onclick="this.parentElement.toggleAttribute('data-folded')">
+                            <span>typography</span>
+                            <i class="na-menu-submenu-title-arrow"></i>
+                        </div>
+                        <ul class="na-menu">
+    <li class="na-menu-item" style="order:1">
+                    <a class="na-menu-item-link" href="/menu/typography/divider">
+                        divider
+                    </a>
+                </li><li class="na-menu-item" style="order:1">
+                    <a class="na-menu-item-link" href="/menu/typography/image">
+                        image
+                    </a>
+                </li><li class="na-menu-item" style="order:0">
+                    <a class="na-menu-item-link" href="/menu/typography/">
+                        readme
+                    </a>
+                </li><li class="na-menu-item" style="order:1">
+                    <a class="na-menu-item-link" href="/menu/typography/layout">
+                        layout
+                    </a>
+                </li><li class="na-menu-item" style="order:1">
+                    <a class="na-menu-item-link" href="/menu/typography/paragraph">
+                        paragraph
+                    </a>
+                </li><li class="na-menu-item" style="order:1">
+                    <a class="na-menu-item-link" href="/menu/typography/table">
+                        table
+                    </a>
+                </li><li class="na-menu-item" style="order:1">
+                    <a class="na-menu-item-link" href="/menu/typography/title">
+                        title
+                    </a>
+                </li>
+</ul>
+                    </li>
+</ul>
+        </aside>
+        <main class="na-layout-content astro-YU3CDCUI">
+            <h1 class="na-title na-font-serif">
+    <span class="na-connot-select">☘</span>
+    global
+</h1>
+<h2 class="na-title na-font-serif" id="data-theme">
+    <a href="#data-theme" class="na-link na-connot-select">#</a>
+    <code class="na-code na-font-mono">data-theme</code>
+</h2>
+<p data-size="p6" class="na-paragraph na-font-serif">
+    主题变量 <code class="na-code na-font-mono">theme: &#39;light&#39;|&#39;dark&#39;</code>
+</p>
+<p data-size="p6" class="na-paragraph na-font-serif">
+    它保存在 <code class="na-code na-font-mono">document.documentElement.dataset</code> 和 <code class="na-code na-font-mono">localStorage</code> 里
+</p>
+<h2 class="na-title na-font-serif" id="message">
+    <a href="#message" class="na-link na-connot-select">#</a>
+    message
+</h2>
+<p data-size="p6" class="na-paragraph na-font-serif">
+    往 <code class="na-code na-font-mono">body&gt;.na-message-queue</code> 里 append 以下元素即可显示消息
+</p>
+<pre class="na-pre na-font-mono"><code class="na-code na-font-mono"><span class="line"><span style="color:#B392F0">.</span><span style="color:#FDAEB7;font-style:italic">na</span><span style="color:#B392F0">-message</span></span>
+<span class="line"><span style="color:#E1E4E8">    </span><span style="color:#B392F0">.</span><span style="color:#FDAEB7;font-style:italic">na</span><span style="color:#B392F0">-paragraph</span><span style="color:#E1E4E8"> 新消息</span></span></code></pre>
+<p data-size="p6" class="na-paragraph na-font-serif">
+    对于本文档页面的消息使用的是：全局监听 <code class="na-code na-font-mono">na-message</code> 事件，添加元素后再定期移除。
+</p>
+<h2 class="na-title na-font-serif" id="color">
+    <a href="#color" class="na-link na-connot-select">#</a>
+    color
+</h2>
+<ul>
+<li class="na-list">纯黑 <code class="na-code na-font-mono">--black</code></li>
+<li class="na-list">纯白 <code class="na-code na-font-mono">--white</code></li>
+</ul>
+<p data-size="p6" class="na-paragraph na-font-serif">
+    其他的颜色 各自有10个明度等级：
+</p>
+<div class="na-table-wrapper astro-S3FJVT6I">
+    <table class="na-table md astro-S3FJVT6I" id="colors-kanban">
+        <tr class="astro-S3FJVT6I">
+            <td class="color astro-S3FJVT6I">red</td>
+            <td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--red-1));color:rgb(var(--black))" title="--red-1">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--red-2));color:rgb(var(--black))" title="--red-2">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--red-3));color:rgb(var(--black))" title="--red-3">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--red-4));color:rgb(var(--black))" title="--red-4">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--red-5));color:rgb(var(--black))" title="--red-5">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--red-6));color:rgb(var(--white))" title="--red-6">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--red-7));color:rgb(var(--white))" title="--red-7">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--red-8));color:rgb(var(--white))" title="--red-8">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--red-9));color:rgb(var(--white))" title="--red-9">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--red-10));color:rgb(var(--white))" title="--red-10">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td>
+            </tr><tr class="astro-S3FJVT6I">
+            <td class="color astro-S3FJVT6I">orangered</td>
+            <td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--orangered-1));color:rgb(var(--black))" title="--orangered-1">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--orangered-2));color:rgb(var(--black))" title="--orangered-2">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--orangered-3));color:rgb(var(--black))" title="--orangered-3">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--orangered-4));color:rgb(var(--black))" title="--orangered-4">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--orangered-5));color:rgb(var(--black))" title="--orangered-5">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--orangered-6));color:rgb(var(--white))" title="--orangered-6">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--orangered-7));color:rgb(var(--white))" title="--orangered-7">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--orangered-8));color:rgb(var(--white))" title="--orangered-8">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--orangered-9));color:rgb(var(--white))" title="--orangered-9">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--orangered-10));color:rgb(var(--white))" title="--orangered-10">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td>
+            </tr><tr class="astro-S3FJVT6I">
+            <td class="color astro-S3FJVT6I">orange</td>
+            <td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--orange-1));color:rgb(var(--black))" title="--orange-1">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--orange-2));color:rgb(var(--black))" title="--orange-2">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--orange-3));color:rgb(var(--black))" title="--orange-3">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--orange-4));color:rgb(var(--black))" title="--orange-4">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--orange-5));color:rgb(var(--black))" title="--orange-5">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--orange-6));color:rgb(var(--white))" title="--orange-6">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--orange-7));color:rgb(var(--white))" title="--orange-7">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--orange-8));color:rgb(var(--white))" title="--orange-8">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--orange-9));color:rgb(var(--white))" title="--orange-9">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--orange-10));color:rgb(var(--white))" title="--orange-10">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td>
+            </tr><tr class="astro-S3FJVT6I">
+            <td class="color astro-S3FJVT6I">gold</td>
+            <td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--gold-1));color:rgb(var(--black))" title="--gold-1">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--gold-2));color:rgb(var(--black))" title="--gold-2">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--gold-3));color:rgb(var(--black))" title="--gold-3">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--gold-4));color:rgb(var(--black))" title="--gold-4">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--gold-5));color:rgb(var(--black))" title="--gold-5">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--gold-6));color:rgb(var(--white))" title="--gold-6">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--gold-7));color:rgb(var(--white))" title="--gold-7">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--gold-8));color:rgb(var(--white))" title="--gold-8">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--gold-9));color:rgb(var(--white))" title="--gold-9">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--gold-10));color:rgb(var(--white))" title="--gold-10">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td>
+            </tr><tr class="astro-S3FJVT6I">
+            <td class="color astro-S3FJVT6I">yellow</td>
+            <td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--yellow-1));color:rgb(var(--black))" title="--yellow-1">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--yellow-2));color:rgb(var(--black))" title="--yellow-2">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--yellow-3));color:rgb(var(--black))" title="--yellow-3">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--yellow-4));color:rgb(var(--black))" title="--yellow-4">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--yellow-5));color:rgb(var(--black))" title="--yellow-5">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--yellow-6));color:rgb(var(--white))" title="--yellow-6">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--yellow-7));color:rgb(var(--white))" title="--yellow-7">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--yellow-8));color:rgb(var(--white))" title="--yellow-8">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--yellow-9));color:rgb(var(--white))" title="--yellow-9">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--yellow-10));color:rgb(var(--white))" title="--yellow-10">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td>
+            </tr><tr class="astro-S3FJVT6I">
+            <td class="color astro-S3FJVT6I">lime</td>
+            <td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--lime-1));color:rgb(var(--black))" title="--lime-1">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--lime-2));color:rgb(var(--black))" title="--lime-2">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--lime-3));color:rgb(var(--black))" title="--lime-3">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--lime-4));color:rgb(var(--black))" title="--lime-4">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--lime-5));color:rgb(var(--black))" title="--lime-5">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--lime-6));color:rgb(var(--white))" title="--lime-6">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--lime-7));color:rgb(var(--white))" title="--lime-7">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--lime-8));color:rgb(var(--white))" title="--lime-8">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--lime-9));color:rgb(var(--white))" title="--lime-9">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--lime-10));color:rgb(var(--white))" title="--lime-10">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td>
+            </tr><tr class="astro-S3FJVT6I">
+            <td class="color astro-S3FJVT6I">green</td>
+            <td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--green-1));color:rgb(var(--black))" title="--green-1">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--green-2));color:rgb(var(--black))" title="--green-2">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--green-3));color:rgb(var(--black))" title="--green-3">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--green-4));color:rgb(var(--black))" title="--green-4">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--green-5));color:rgb(var(--black))" title="--green-5">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--green-6));color:rgb(var(--white))" title="--green-6">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--green-7));color:rgb(var(--white))" title="--green-7">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--green-8));color:rgb(var(--white))" title="--green-8">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--green-9));color:rgb(var(--white))" title="--green-9">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--green-10));color:rgb(var(--white))" title="--green-10">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td>
+            </tr><tr class="astro-S3FJVT6I">
+            <td class="color astro-S3FJVT6I">cyan</td>
+            <td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--cyan-1));color:rgb(var(--black))" title="--cyan-1">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--cyan-2));color:rgb(var(--black))" title="--cyan-2">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--cyan-3));color:rgb(var(--black))" title="--cyan-3">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--cyan-4));color:rgb(var(--black))" title="--cyan-4">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--cyan-5));color:rgb(var(--black))" title="--cyan-5">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--cyan-6));color:rgb(var(--white))" title="--cyan-6">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--cyan-7));color:rgb(var(--white))" title="--cyan-7">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--cyan-8));color:rgb(var(--white))" title="--cyan-8">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--cyan-9));color:rgb(var(--white))" title="--cyan-9">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--cyan-10));color:rgb(var(--white))" title="--cyan-10">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td>
+            </tr><tr class="astro-S3FJVT6I">
+            <td class="color astro-S3FJVT6I">blue</td>
+            <td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--blue-1));color:rgb(var(--black))" title="--blue-1">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--blue-2));color:rgb(var(--black))" title="--blue-2">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--blue-3));color:rgb(var(--black))" title="--blue-3">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--blue-4));color:rgb(var(--black))" title="--blue-4">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--blue-5));color:rgb(var(--black))" title="--blue-5">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--blue-6));color:rgb(var(--white))" title="--blue-6">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--blue-7));color:rgb(var(--white))" title="--blue-7">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--blue-8));color:rgb(var(--white))" title="--blue-8">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--blue-9));color:rgb(var(--white))" title="--blue-9">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--blue-10));color:rgb(var(--white))" title="--blue-10">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td>
+            </tr><tr class="astro-S3FJVT6I">
+            <td class="color astro-S3FJVT6I">arcoblue</td>
+            <td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--arcoblue-1));color:rgb(var(--black))" title="--arcoblue-1">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--arcoblue-2));color:rgb(var(--black))" title="--arcoblue-2">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--arcoblue-3));color:rgb(var(--black))" title="--arcoblue-3">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--arcoblue-4));color:rgb(var(--black))" title="--arcoblue-4">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--arcoblue-5));color:rgb(var(--black))" title="--arcoblue-5">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--arcoblue-6));color:rgb(var(--white))" title="--arcoblue-6">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--arcoblue-7));color:rgb(var(--white))" title="--arcoblue-7">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--arcoblue-8));color:rgb(var(--white))" title="--arcoblue-8">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--arcoblue-9));color:rgb(var(--white))" title="--arcoblue-9">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--arcoblue-10));color:rgb(var(--white))" title="--arcoblue-10">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td>
+            </tr><tr class="astro-S3FJVT6I">
+            <td class="color astro-S3FJVT6I">purple</td>
+            <td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--purple-1));color:rgb(var(--black))" title="--purple-1">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--purple-2));color:rgb(var(--black))" title="--purple-2">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--purple-3));color:rgb(var(--black))" title="--purple-3">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--purple-4));color:rgb(var(--black))" title="--purple-4">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--purple-5));color:rgb(var(--black))" title="--purple-5">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--purple-6));color:rgb(var(--white))" title="--purple-6">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--purple-7));color:rgb(var(--white))" title="--purple-7">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--purple-8));color:rgb(var(--white))" title="--purple-8">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--purple-9));color:rgb(var(--white))" title="--purple-9">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--purple-10));color:rgb(var(--white))" title="--purple-10">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td>
+            </tr><tr class="astro-S3FJVT6I">
+            <td class="color astro-S3FJVT6I">pinkpurple</td>
+            <td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--pinkpurple-1));color:rgb(var(--black))" title="--pinkpurple-1">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--pinkpurple-2));color:rgb(var(--black))" title="--pinkpurple-2">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--pinkpurple-3));color:rgb(var(--black))" title="--pinkpurple-3">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--pinkpurple-4));color:rgb(var(--black))" title="--pinkpurple-4">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--pinkpurple-5));color:rgb(var(--black))" title="--pinkpurple-5">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--pinkpurple-6));color:rgb(var(--white))" title="--pinkpurple-6">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--pinkpurple-7));color:rgb(var(--white))" title="--pinkpurple-7">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--pinkpurple-8));color:rgb(var(--white))" title="--pinkpurple-8">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--pinkpurple-9));color:rgb(var(--white))" title="--pinkpurple-9">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--pinkpurple-10));color:rgb(var(--white))" title="--pinkpurple-10">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td>
+            </tr><tr class="astro-S3FJVT6I">
+            <td class="color astro-S3FJVT6I">magenta</td>
+            <td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--magenta-1));color:rgb(var(--black))" title="--magenta-1">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--magenta-2));color:rgb(var(--black))" title="--magenta-2">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--magenta-3));color:rgb(var(--black))" title="--magenta-3">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--magenta-4));color:rgb(var(--black))" title="--magenta-4">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--magenta-5));color:rgb(var(--black))" title="--magenta-5">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--magenta-6));color:rgb(var(--white))" title="--magenta-6">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--magenta-7));color:rgb(var(--white))" title="--magenta-7">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--magenta-8));color:rgb(var(--white))" title="--magenta-8">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--magenta-9));color:rgb(var(--white))" title="--magenta-9">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--magenta-10));color:rgb(var(--white))" title="--magenta-10">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td>
+            </tr><tr class="astro-S3FJVT6I">
+            <td class="color astro-S3FJVT6I">gray</td>
+            <td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--gray-1));color:rgb(var(--black))" title="--gray-1">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--gray-2));color:rgb(var(--black))" title="--gray-2">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--gray-3));color:rgb(var(--black))" title="--gray-3">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--gray-4));color:rgb(var(--black))" title="--gray-4">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--gray-5));color:rgb(var(--black))" title="--gray-5">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--gray-6));color:rgb(var(--white))" title="--gray-6">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--gray-7));color:rgb(var(--white))" title="--gray-7">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--gray-8));color:rgb(var(--white))" title="--gray-8">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--gray-9));color:rgb(var(--white))" title="--gray-9">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td><td class="astro-S3FJVT6I">
+                        <button class="na-button copy astro-S3FJVT6I" style="background-color:rgb(var(--gray-10));color:rgb(var(--white))" title="--gray-10">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="copy" class="astro-S3FJVT6I" astro-icon="edit/outline/copy"><path d="M20 6h18a2 2 0 0 1 2 2v22M8 16v24c0 1.105.891 2 1.996 2h20.007A1.99 1.99 0 0 0 32 40.008V15.997A1.997 1.997 0 0 0 30 14H10a2 2 0 0 0-2 2Z"/></svg>
+                        </button>
+                    </td>
+            </tr>
+    </table>
+</div>
+<h3 class="na-title na-font-serif" id="data-primary">
+    <a href="#data-primary" class="na-link na-connot-select">#</a>
+    <code class="na-code na-font-mono">data-primary</code>
+</h3>
+<p data-size="p6" class="na-paragraph na-font-serif">
+    <code class="na-code na-font-mono">data-primary</code> 可以让有颜色的标签改变为以下4种目标颜色之一。
+</p>
+<ul>
+<li class="na-list">
+<code class="na-code">
+    [data-primary]
+</code>
+</li>
+<li class="na-list">
+<code class="na-code" data-primary="success">
+    [data-primary=success]
+</code>
+</li>
+<li class="na-list">
+<code class="na-code" data-primary="danger">
+    [data-primary=danger]
+</code>
+</li>
+<li class="na-list">
+<code class="na-code" data-primary="warning">
+    [data-primary=warning]
+</code>
+</li>
+</ul>
+        </main>
+    </section>
+    <footer class="na-layout-footer astro-K2F5ZB5C">
+    由 &nbsp; 
+    <a href="https://astro.build" class="astro-K2F5ZB5C">
+        Astro v2.10.12
+    </a> 
+    &nbsp; 构建
+</footer>
+
+    </body></html>

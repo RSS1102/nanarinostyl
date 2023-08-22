@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="astro-KQ56SC45">
+    <head>
+        <meta charset="UTF-8">
+        <title>表格</title>
+        <meta name="generator" content="Astro v2.10.12">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+        <script fetchpriority="high">(function(){const prefix = "na";
+window.name = prefix})();</script>
+        <script fetchpriority="high">(function(){const prefix = "na";
+
+            Object.defineProperty(window, "theme", {
+                get: () => {
+                    let theme = localStorage.getItem("theme") || "auto";
+                    if (theme === "auto") {
+                        theme = ["dark", "light"][
+                            +!window.matchMedia?.("(prefers-color-scheme: dark)")?.matches
+                        ];
+                    }
+                    return theme
+                }
+            });
+            document.documentElement.dataset["theme"] = window.theme;
+        })();</script>
+        
+        
+        
+    <link rel="stylesheet" href="/_astro/badge.07995974.css" />
+<link rel="stylesheet" href="/_astro/badge.ed0a3819.css" /><script type="module" src="/_astro/hoisted.233e7790.js"></script></head>
+    <body class="astro-KQ56SC45">
+        <div class="na-message-queue" id="message-queue"></div>
+        
+    <header class="na-layout-header astro-HPNW4VWY">
+    <a href="/" class="logo astro-HPNW4VWY">
+        <img src="/favicon.svg" alt="logo" class="logo astro-HPNW4VWY">
+    </a>
+    <span class="na-switch astro-HPNW4VWY">
+    <input type="checkbox" id="header-theme-switch" name="theme">
+    <label class="na-switch-mover" for="header-theme-switch" title="theme">
+        <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="sun" class="astro-HPNW4VWY" astro-icon="general/outline/sun"><circle cx="24" cy="24" r="7"/><path d="M23 7h2v2h-2zM23 39h2v2h-2zM41 23v2h-2v-2zM9 23v2H7v-2zM36.73 35.313l-1.415 1.415-1.414-1.415 1.414-1.414zM14.099 12.686l-1.414 1.415-1.414-1.415 1.414-1.414zM12.687 36.728l-1.414-1.415 1.414-1.414 1.414 1.414zM35.314 14.1 33.9 12.686l1.414-1.414 1.415 1.414z"/><path fill="currentColor" stroke="none" d="M23 7h2v2h-2zM23 39h2v2h-2zM41 23v2h-2v-2zM9 23v2H7v-2zM36.73 35.313l-1.415 1.415-1.414-1.415 1.414-1.414zM14.099 12.686l-1.414 1.415-1.414-1.415 1.414-1.414zM12.687 36.728l-1.414-1.415 1.414-1.414 1.414 1.414zM35.314 14.1 33.9 12.686l1.414-1.414 1.415 1.414z"/></svg>
+        <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48" alt="moon" class="astro-HPNW4VWY" astro-icon="general/outline/moon"><path d="M39.979 29.241c.11-.344-.23-.654-.574-.544-1.53.487-3.162.75-4.855.75-8.834 0-15.997-7.163-15.997-15.997 0-1.693.263-3.324.75-4.855.11-.344-.2-.684-.544-.574C11.939 10.19 7 16.576 7 24.114 7 33.44 14.56 41 23.886 41c7.538 0 13.923-4.94 16.093-11.759Z"/></svg>
+    </label>
+</span>
+</header>
+    <section class="na-layout astro-YU3CDCUI" data-has-sider>
+        <aside class="na-layout-sider astro-YU3CDCUI">
+            <ul class="na-menu">
+    <li class="na-menu-item" style="order:1">
+                    <a class="na-menu-item-link" href="/menu/badge">
+                        badge
+                    </a>
+                </li><li class="na-menu-item" style="order:1">
+                    <a class="na-menu-item-link" href="/menu/button">
+                        button
+                    </a>
+                </li><li class="na-menu-submenu" style="order:1" data-folded>
+                        <div class="na-menu-submenu-title" onclick="this.parentElement.toggleAttribute('data-folded')">
+                            <span>form</span>
+                            <i class="na-menu-submenu-title-arrow"></i>
+                        </div>
+                        <ul class="na-menu">
+    <li class="na-menu-item" style="order:1">
+                    <a class="na-menu-item-link" href="/menu/form/switch">
+                        switch
+                    </a>
+                </li>
+</ul>
+                    </li><li class="na-menu-item" style="order:0">
+                    <a class="na-menu-item-link" href="/menu/">
+                        readme
+                    </a>
+                </li><li class="na-menu-item" style="order:1">
+                    <a class="na-menu-item-link" href="/menu/link">
+                        link
+                    </a>
+                </li><li class="na-menu-item" style="order:1">
+                    <a class="na-menu-item-link" href="/menu/tag">
+                        tag
+                    </a>
+                </li><li class="na-menu-submenu" style="order:1">
+                        <div class="na-menu-submenu-title" onclick="this.parentElement.toggleAttribute('data-folded')">
+                            <span>typography</span>
+                            <i class="na-menu-submenu-title-arrow"></i>
+                        </div>
+                        <ul class="na-menu">
+    <li class="na-menu-item" style="order:1">
+                    <a class="na-menu-item-link" href="/menu/typography/divider">
+                        divider
+                    </a>
+                </li><li class="na-menu-item" style="order:1">
+                    <a class="na-menu-item-link" href="/menu/typography/image">
+                        image
+                    </a>
+                </li><li class="na-menu-item" style="order:0">
+                    <a class="na-menu-item-link" href="/menu/typography/">
+                        readme
+                    </a>
+                </li><li class="na-menu-item" style="order:1">
+                    <a class="na-menu-item-link" href="/menu/typography/layout">
+                        layout
+                    </a>
+                </li><li class="na-menu-item" style="order:1">
+                    <a class="na-menu-item-link" href="/menu/typography/paragraph">
+                        paragraph
+                    </a>
+                </li><li class="na-menu-item" style="order:1">
+                    <a class="na-menu-item-link" href="/menu/typography/table">
+                        table
+                    </a>
+                </li><li class="na-menu-item" style="order:1">
+                    <a class="na-menu-item-link" href="/menu/typography/title">
+                        title
+                    </a>
+                </li>
+</ul>
+                    </li>
+</ul>
+        </aside>
+        <main class="na-layout-content astro-YU3CDCUI">
+            <h1 class="na-title na-font-serif">
+    <span class="na-connot-select">☘</span>
+    table
+</h1>
+<h2 class="na-title na-font-serif" id="table-1">
+    <a href="#table-1" class="na-link na-connot-select">#</a>
+    <code class="na-code na-font-mono">&lt;table&gt;</code>
+</h2>
+<div class="na-table-wrapper">
+    <table class="na-table sm">
+    <tr style="--text-align-cell: center"><th></th><th colspan="2"> abc at concert pitch </th><th colspan="2"> abc at written pitch </th></tr><tr><th> Instrument </th><th> <code class="na-code na-font-mono">instrument=&lt;n&gt;/c</code> </th><th> <code class="na-code na-font-mono">score=&lt;n&gt;</code> </th><th> <code class="na-code na-font-mono">instrument=&lt;n&gt;/&lt;n&gt;</code> </th><th> <code class="na-code na-font-mono">instrument=&lt;n&gt;</code> </th></tr><tr><td> piccolo </td><td> <code class="na-code na-font-mono">instrument=c&#39;/c</code> </td><td> <code class="na-code na-font-mono">score=c&#39; </code> </td><td> <code class="na-code na-font-mono">instrument=c&#39;/c&#39; </code> </td><td> <code class="na-code na-font-mono">instrument=c&#39; </code> </td></tr><tr><td> Bb clarinet </td><td> <code class="na-code na-font-mono">instrument=_B/c</code> </td><td> <code class="na-code na-font-mono">score=_B</code> </td><td> <code class="na-code na-font-mono">instrument=_B/_B</code> </td><td> <code class="na-code na-font-mono">instrument=_B</code> </td></tr><tr><td> soprano sax </td><td> <code class="na-code na-font-mono">instrument=_B/c</code> </td><td> <code class="na-code na-font-mono">score=_B</code> </td><td> <code class="na-code na-font-mono">instrument=_B/_B</code> </td><td> <code class="na-code na-font-mono">instrument=_B</code> </td></tr><tr><td> A clarinet </td><td> <code class="na-code na-font-mono">instrument=A/c</code> </td><td> <code class="na-code na-font-mono">score=A</code> </td><td> <code class="na-code na-font-mono">instrument=A/A</code> </td><td> <code class="na-code na-font-mono">instrument=A</code> </td></tr><tr><td> alto flute </td><td> <code class="na-code na-font-mono">instrument=G/c</code> </td><td> <code class="na-code na-font-mono">score=G</code> </td><td> <code class="na-code na-font-mono">instrument=G/G</code> </td><td> <code class="na-code na-font-mono">instrument=G</code> </td></tr><tr><td> cor anglais </td><td> <code class="na-code na-font-mono">instrument=F/c</code> </td><td> <code class="na-code na-font-mono">score=F</code> </td><td> <code class="na-code na-font-mono">instrument=F/F</code> </td><td> <code class="na-code na-font-mono">instrument=F</code> </td></tr><tr><td> alto sax </td><td> <code class="na-code na-font-mono">instrument=_E/c</code> </td><td> <code class="na-code na-font-mono">score=_E</code> </td><td> <code class="na-code na-font-mono">instrument=_E/_E</code> </td><td> <code class="na-code na-font-mono">instrument=_E</code> </td></tr><tr><td> double bass </td><td> <code class="na-code na-font-mono">instrument=C/c</code> </td><td> <code class="na-code na-font-mono">score=C</code> </td><td> <code class="na-code na-font-mono">instrument=C/C</code> </td><td> <code class="na-code na-font-mono">instrument=C</code> </td></tr><tr><td> tenor sax </td><td> <code class="na-code na-font-mono">instrument=_B,/c</code> </td><td> <code class="na-code na-font-mono">score=_B,</code> </td><td> <code class="na-code na-font-mono">instrument=_B,/_B,</code> </td><td> <code class="na-code na-font-mono">instrument=_B,</code> </td></tr>
+</table>
+</div>
+<pre class="na-pre na-font-mono"><code class="na-code na-font-mono"><span class="line"><span style="color:#B392F0">.</span><span style="color:#FDAEB7;font-style:italic">na</span><span style="color:#B392F0">-table-wrapper</span></span>
+<span class="line"><span style="color:#E1E4E8">    </span><span style="color:#85E89D">table</span><span style="color:#B392F0">.</span><span style="color:#FDAEB7;font-style:italic">na</span><span style="color:#B392F0">-table</span></span>
+<span class="line"><span style="color:#E1E4E8">        </span><span style="color:#85E89D">thead</span></span>
+<span class="line"><span style="color:#E1E4E8">            </span><span style="color:#85E89D">tr</span></span>
+<span class="line"><span style="color:#E1E4E8">                </span><span style="color:#85E89D">th</span><span style="color:#E1E4E8"> ...</span></span>
+<span class="line"><span style="color:#E1E4E8">        </span><span style="color:#85E89D">tbody</span></span>
+<span class="line"><span style="color:#E1E4E8">            </span><span style="color:#85E89D">tr</span></span>
+<span class="line"><span style="color:#E1E4E8">                </span><span style="color:#85E89D">td</span><span style="color:#E1E4E8"> ...</span></span>
+<span class="line"><span style="color:#E1E4E8">        </span><span style="color:#85E89D">tfoot</span></span>
+<span class="line"><span style="color:#E1E4E8">            </span><span style="color:#85E89D">tr</span></span>
+<span class="line"><span style="color:#E1E4E8">                </span><span style="color:#85E89D">td</span><span style="color:#E1E4E8"> ...</span></span></code></pre>
+<h2 class="na-title na-font-serif" id="div">
+    <a href="#div" class="na-link na-connot-select">#</a>
+    <code class="na-code na-font-mono">&lt;div&gt;</code>
+</h2>
+<div class="na-table-wrapper">
+    <div class="na-table">
+    <div class="na-table-header-group">
+    <div class="na-table-row">
+    <div class="na-table-cell">
+     𝗠𝗼𝗱𝗲 
+</div><div class="na-table-cell">
+     𝓘𝓸𝓷𝓲𝓪𝓷 
+</div><div class="na-table-cell">
+     𝓐𝓮𝓸𝓵𝓲𝓪𝓷 
+</div><div class="na-table-cell">
+     𝓜𝓲𝔁𝓸𝓵𝔂𝓭𝓲𝓪𝓷
+</div><div class="na-table-cell">
+     𝓓𝓸𝓻𝓲𝓪𝓷 
+</div><div class="na-table-cell">
+     𝓟𝓱𝓻𝔂𝓰𝓲𝓪𝓷 
+</div><div class="na-table-cell">
+     𝓛𝔂𝓭𝓲𝓪𝓷 
+</div><div class="na-table-cell">
+     𝓛𝓸𝓬𝓻𝓲𝓪𝓷 
+</div>
+</div><div class="na-table-row">
+    <div class="na-table-cell">
+     𝗞𝗲𝘆 𝗦𝗶𝗴𝗻𝗮𝘁𝘂𝗿𝗲 
+</div><div class="na-table-cell">
+     𝙈𝙖𝙟𝙤𝙧 
+</div><div class="na-table-cell">
+     𝙈𝙞𝙣𝙤𝙧 
+</div><div class="na-table-cell">
+    
+</div><div class="na-table-cell">
+    
+</div><div class="na-table-cell">
+    
+</div><div class="na-table-cell">
+    
+</div><div class="na-table-cell">
+    
+</div>
+</div>
+</div><div class="na-table-row">
+    <div class="na-table-cell">
+     7 sharps 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">C#</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">A#m</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">G#Mix</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">D#Dor</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">E#Phr</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">F#Lyd</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">B#Loc</code> 
+</div>
+</div><div class="na-table-row">
+    <div class="na-table-cell">
+     6 sharps 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">F#</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">D#m</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">C#Mix</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">G#Dor</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">A#Phr</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">BLyd</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">E#Loc</code> 
+</div>
+</div><div class="na-table-row">
+    <div class="na-table-cell">
+     5 sharps 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">B</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">G#m</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">F#Mix</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">C#Dor</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">D#Phr</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">ELyd</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">A#Loc</code> 
+</div>
+</div><div class="na-table-row">
+    <div class="na-table-cell">
+     4 sharps 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">E</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">C#m</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">BMix</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">F#Dor</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">G#Phr</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">ALyd</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">D#Loc</code> 
+</div>
+</div><div class="na-table-row">
+    <div class="na-table-cell">
+     3 sharps 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">A</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">F#m</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">EMix</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">BDor</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">C#Phr</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">DLyd</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">G#Loc</code> 
+</div>
+</div><div class="na-table-row">
+    <div class="na-table-cell">
+     2 sharps 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">D</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">Bm</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">AMix</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">EDor</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">F#Phr</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">GLyd</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">C#Loc</code> 
+</div>
+</div><div class="na-table-row">
+    <div class="na-table-cell">
+     1 sharp 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">G</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">Em</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">DMix</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">ADor</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">BPhr</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">CLyd</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">F#Loc</code> 
+</div>
+</div><div class="na-table-row">
+    <div class="na-table-cell">
+     0 sharps/flats 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">C</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">Am</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">GMix</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">DDor</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">EPhr</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">FLyd</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">BLoc</code> 
+</div>
+</div><div class="na-table-row">
+    <div class="na-table-cell">
+     1 flat 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">F</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">Dm</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">CMix</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">GDor</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">APhr</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">BbLyd</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">ELoc</code> 
+</div>
+</div><div class="na-table-row">
+    <div class="na-table-cell">
+     2 flats 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">Bb</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">Gm</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">FMix</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">CDor</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">DPhr</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">EbLyd</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">ALoc</code> 
+</div>
+</div><div class="na-table-row">
+    <div class="na-table-cell">
+     3 flats 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">Eb</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">Cm</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">BbMix</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">FDor</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">GPhr</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">AbLyd</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">DLoc</code> 
+</div>
+</div><div class="na-table-row">
+    <div class="na-table-cell">
+     4 flats 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">Ab</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">Fm</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">EbMix</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">BbDor</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">CPhr</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">DbLyd</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">GLoc</code> 
+</div>
+</div><div class="na-table-row">
+    <div class="na-table-cell">
+     5 flats 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">Db</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">Bbm</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">AbMix</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">EbDor</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">FPhr</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">GbLyd</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">CLoc</code> 
+</div>
+</div><div class="na-table-row">
+    <div class="na-table-cell">
+     6 flats 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">Gb</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">Ebm</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">DbMix</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">AbDor</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">BbPhr</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">CbLyd</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">FLoc</code> 
+</div>
+</div><div class="na-table-row">
+    <div class="na-table-cell">
+     7 flats 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">Cb</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">Abm</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">GbMix</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">DbDor</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">EbPhr</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">FbLyd</code> 
+</div><div class="na-table-cell">
+     <code class="na-code na-font-mono">BbLoc</code> 
+</div>
+</div>
+</div>
+</div>
+<pre class="na-pre na-font-mono"><code class="na-code na-font-mono"><span class="line"><span style="color:#B392F0">.</span><span style="color:#FDAEB7;font-style:italic">na</span><span style="color:#B392F0">-table-wrapper</span></span>
+<span class="line"><span style="color:#E1E4E8">    </span><span style="color:#B392F0">.</span><span style="color:#FDAEB7;font-style:italic">na</span><span style="color:#B392F0">-table</span></span>
+<span class="line"><span style="color:#E1E4E8">        </span><span style="color:#B392F0">.</span><span style="color:#FDAEB7;font-style:italic">na</span><span style="color:#B392F0">-table-header-group</span></span>
+<span class="line"><span style="color:#E1E4E8">            </span><span style="color:#B392F0">.</span><span style="color:#FDAEB7;font-style:italic">na</span><span style="color:#B392F0">-table-row</span></span>
+<span class="line"><span style="color:#E1E4E8">                </span><span style="color:#B392F0">.</span><span style="color:#FDAEB7;font-style:italic">na</span><span style="color:#B392F0">-table-cell</span><span style="color:#E1E4E8"> ...</span></span>
+<span class="line"><span style="color:#E1E4E8">        </span><span style="color:#B392F0">.</span><span style="color:#FDAEB7;font-style:italic">na</span><span style="color:#B392F0">-table-row</span></span>
+<span class="line"><span style="color:#E1E4E8">            </span><span style="color:#B392F0">.</span><span style="color:#FDAEB7;font-style:italic">na</span><span style="color:#B392F0">-table-cell</span><span style="color:#E1E4E8"> ...</span></span>
+<span class="line"><span style="color:#E1E4E8">        </span><span style="color:#B392F0">.</span><span style="color:#FDAEB7;font-style:italic">na</span><span style="color:#B392F0">-table-footer-group</span></span>
+<span class="line"><span style="color:#E1E4E8">            </span><span style="color:#B392F0">.</span><span style="color:#FDAEB7;font-style:italic">na</span><span style="color:#B392F0">-table-row</span></span>
+<span class="line"><span style="color:#E1E4E8">                </span><span style="color:#B392F0">.</span><span style="color:#FDAEB7;font-style:italic">na</span><span style="color:#B392F0">-table-cell</span><span style="color:#E1E4E8"> ...</span></span></code></pre>
+<h2 class="na-title na-font-serif" id="sm--lg">
+    <a href="#sm--lg" class="na-link na-connot-select">#</a>
+    <code class="na-code na-font-mono">.sm</code> &amp; <code class="na-code na-font-mono">.lg</code>
+</h2>
+<ul>
+<li class="na-list"><code class="na-code na-font-mono">.na-table.sm</code> 尺寸更小的表格</li>
+<li class="na-list"><code class="na-code na-font-mono">.na-table.lg</code> 尺寸更大的表格</li>
+</ul>
+<h2 class="na-title na-font-serif" id="custom-style">
+    <a href="#custom-style" class="na-link na-connot-select">#</a>
+    custom style
+</h2>
+<ul>
+<li class="na-list"><code class="na-code na-font-mono">--min-width-cell</code> 表格宽度</li>
+<li class="na-list"><code class="na-code na-font-mono">--padding-cell</code> 表格内边距</li>
+<li class="na-list"><code class="na-code na-font-mono">--border-cell</code> 表格边框</li>
+<li class="na-list"><code class="na-code na-font-mono">--text-align-cell</code> 调整 表格文字默认居左</li>
+</ul>
+        </main>
+    </section>
+    <footer class="na-layout-footer astro-K2F5ZB5C">
+    由 &nbsp; 
+    <a href="https://astro.build" class="astro-K2F5ZB5C">
+        Astro v2.10.12
+    </a> 
+    &nbsp; 构建
+</footer>
+
+    </body></html>
